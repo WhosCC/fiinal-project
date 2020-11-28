@@ -69,7 +69,7 @@ def countNucFrequency(seq):
     for nuc in seq:
         tmpFreqDict[nuc] += 1
     return tmpFreqDict
-
+    
 #print(countNucFrequency(DNAStr))
 
 # Transcription from DNA to RNA
@@ -170,28 +170,28 @@ def ORF_protein(aa_seq): #aa represents amino_acid
     return orf_proteins
 
         
-print(f'\nSequence: {coloring(covid19_DNAStr)}\n')
-print(f'[1] : Sequence Length: {len(covid19_DNAStr)}\n')
-print(f'[2] : Nucleotide Frequencies: {countNucFrequency(covid19_DNAStr)}\n')
-print(f'[3] : DNA Single Strand DNA Complement:{DNAcomplement(covid19_DNAStr)}\n')
-print(f"[4] : Original DNA Strand + DNA Complemnt:\n5' {covid19_DNAStr} 3'")
-print(f"3' {DNAcomplement(covid19_DNAStr)} 5'\n")
-print(f'[5] : Transcription Result: {transcription(r_covid19_DNAStr)}\n')
-print(f"[6] : Original DNA Strand + Transcription Result:\n5' {covid19_DNAStr} 3'")
-print(f'[7] : GC_Portions of DNA Sequence: {gc_portion(covid19_DNAStr)}%\n')
-print(f'[8] : Translation Result: {translation(covid19_DNAStr, 0)}\n')
-print(f'[9] : Lys Count: {len(aminoacidFreq(covid19_DNAStr, "Lys"))}\n')
-print(f'[10] : Amino Acid Frequency (Lys): {countCodonFrequency(covid19_DNAStr, "Lys")}\n')
-print(f'[11] : Cys Count: {len(aminoacidFreq(covid19_DNAStr, "Cys"))}\n')  
-print(f'[12] : Amino Acid Frequency (Cys): {countCodonFrequency(covid19_DNAStr, "Cys")}\n')
-print(f'[13] : Tyr Count: {len(aminoacidFreq(covid19_DNAStr, "Tyr"))}\n')
-print(f'[14] : Amino Acid Frequency (Tyr): {countCodonFrequency(covid19_DNAStr, "Tyr")}\n')
-print('[15] : Reading Frames:')    
-for frame in reading_frame(covid19_DNAStr):
-    print(frame)
-print('[16] : All Open Reading Frames:')    
-for frame in reading_frame(covid19_DNAStr):
-    print(ORF_protein(frame))
+#print(f'\nSequence: {coloring(covid19_DNAStr)}\n')
+#print(f'[1] : Sequence Length: {len(covid19_DNAStr)}\n')
+#print(f'[2] : Nucleotide Frequencies: {countNucFrequency(covid19_DNAStr)}\n')
+#print(f'[3] : DNA Single Strand DNA Complement:{DNAcomplement(covid19_DNAStr)}\n')
+#print(f"[4] : Original DNA Strand + DNA Complemnt:\n5' {covid19_DNAStr} 3'")
+#print(f"3' {DNAcomplement(covid19_DNAStr)} 5'\n")
+#print(f'[5] : Transcription Result: {transcription(r_covid19_DNAStr)}\n')
+#print(f"[6] : Original DNA Strand + Transcription Result:\n5' {covid19_DNAStr} 3'")
+#print(f'[7] : GC_Portions of DNA Sequence: {gc_portion(covid19_DNAStr)}%\n')
+#print(f'[8] : Translation Result: {translation(covid19_DNAStr, 0)}\n')
+#print(f'[9] : Lys Count: {len(aminoacidFreq(covid19_DNAStr, "Lys"))}\n')
+#print(f'[10] : Amino Acid Frequency (Lys): {countCodonFrequency(covid19_DNAStr, "Lys")}\n')
+#print(f'[11] : Cys Count: {len(aminoacidFreq(covid19_DNAStr, "Cys"))}\n')  
+#print(f'[12] : Amino Acid Frequency (Cys): {countCodonFrequency(covid19_DNAStr, "Cys")}\n')
+#print(f'[13] : Tyr Count: {len(aminoacidFreq(covid19_DNAStr, "Tyr"))}\n')
+#print(f'[14] : Amino Acid Frequency (Tyr): {countCodonFrequency(covid19_DNAStr, "Tyr")}\n')
+#print('[15] : Reading Frames:')    
+#for frame in reading_frame(covid19_DNAStr):
+   # print(frame)
+#print('[16] : All Open Reading Frames:')    
+#for frame in reading_frame(covid19_DNAStr):
+    #print(ORF_protein(frame))
 
     
            
