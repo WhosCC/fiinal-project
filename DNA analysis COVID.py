@@ -42,7 +42,7 @@ plt.show()
 #print(f"[4] : Original DNA Strand + DNA Complemnt:\n5' {DNAStr} 3'")
 #print(f"   {''.join(['|' for a in range(len(DNAStr))])}")
 #print(f"3' {DNAcomplement(DNAStr)} 5'\n")
-#TOO LONG TO PLOT?
+#TOO LONG TO PLOT? 效果不是很好
 
 #print(f'[5] : Transcription Result: {transcription(DNAStr)}\n')
 #重复了吗？
@@ -61,6 +61,7 @@ print(f'[12] : Amino Acid Frequency (Cys): {countCodonFrequency(DNAStr, "Cys")}\
 print(f'[13] : Tyr Count: {len(aminoacidFreq(DNAStr, "Tyr"))}\n')
 print(f'[14] : Amino Acid Frequency (Tyr): {countCodonFrequency(DNAStr, "Tyr")}\n')
 
+#加了一个lys,cys,tyr的图
 lys=len(aminoacidFreq(DNAStr, "Lys"))
 cys=len(aminoacidFreq(DNAStr, "Cys"))
 tyr=len(aminoacidFreq(DNAStr, "Tyr"))
@@ -74,7 +75,8 @@ plt.title("Base Frequency")
 plt.xlabel("Nucleotide Type")
 plt.ylabel("Nucleotide Number")
 plt.show()
-
+      
+#或者换个output方式？这个有点太长了
 print('[15] : Reading Frames:')    
 for frame in reading_frame(DNAStr):
    print(frame)
